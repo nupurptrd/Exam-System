@@ -41,11 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <section aria-labelledby="login-heading">
             <h2 id="login-heading" class="text-xl font-bold">Login</h2>
             <?php if (isset($error)) echo "<p class='text-red-500' role='alert'>$error</p>"; ?>
-            <form method="POST" aria-label="Login form">
-                <label for="username"class="block mt-2">Username (min 5 characters):</label>
+            <form method="POST" >
+                <label for="username"class="block mt-2">Username :</label>
                 <input type="text" id="username" name="username" minlength="5" required title="Username must be at least 5 characters long" required class="border p-2 w-full">
                 <label for="password" class="block mt-2">Password:</label>
-                <input type="password" id="password" name="password" minlength="5" maxlength="225"required title="password must be at least 8 characters long" required class="border p-2 w-full" >
+                <input type="password" id="password" name="password" minlength="5" maxlength="255"required title="password must be at least 8 characters long" required class="border p-2 w-full" >
                 <button type="submit" class="bg-blue-600 text-white p-2 mt-4">Login</button>
             </form>
             <p class="mt-4">Don't have an account? <a href="register.php" class="text-blue-600 underline">Register</a></p>
