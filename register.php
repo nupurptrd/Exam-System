@@ -22,26 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Minlength Input</title>
-</head>
-<body>
-  <form>
-    <label for="username">Username (min 5 characters):</label>
-    <input type="text" id="username" name="username" minlength="5" required
-           title="Username must be at least 5 characters long">
-    <br><br>
-    <button type="submit">Submit</button>
-  </form>
-</body>
-</html>
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
