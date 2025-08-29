@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="username"class="block mt-2">Username (min 5 characters):</label>
                 <input type="text" id="username" name="username" minlength="5" required title="Username must be at least 5 characters long" required class="border p-2 w-full">
                 <label for="password" class="block mt-2">Password:</label>
-                <input type="password" id="password" name="password" minlength="5" maxlength="225"required title="password must be at least 8 characters long" required class="border p-2 w-full" >
+                <input type="password" id="password" name="password" minlength="5" maxlength="255"required title="password must be at least 8 characters long" required class="border p-2 w-full" >
                 <label for="name" class="block mt-2">Name:</label>
                 <input type="text" id="name" name="name" required class="border p-2 w-full" >
                 <label for="role" class="block mt-2">Role:</label>
